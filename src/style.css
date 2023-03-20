@@ -1,7 +1,18 @@
+ul {
+  list-style-type: none;
+  padding: 10px;
+}
+li {
+  margin-bottom: 0;
+}
+.small {
+  font-size: 12px;
+}
 .container {
   padding-top: 40px;
   max-width: 600px;
   height: 400px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .weatherApp {
   padding: 20px;
@@ -28,23 +39,30 @@
 .city {
   font-size: 30px;
 }
-.temp {
-  font-size: 55px;
-  padding-left: 10px;
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -32px;
 }
-ul {
-  list-style-type: none;
-  padding: 10px;
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+  float: left;
+}
+.weather-temperature strong {
+  color: rgb(36, 36, 36);
+  font-weight: 200;
+  font-size: 64px;
+  line-height: 1;
 }
 .humidity .wind {
   margin: 0px;
 }
 .details {
-  padding-top: 10px;
+  padding-top: 0px;
 }
-p {
-  font-size: 12px;
-}
+
 .weatherForecast {
   border-bottom: 1px solid #f9f7fe;
   margin: 40px 0;
