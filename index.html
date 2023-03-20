@@ -36,107 +36,91 @@
             </button>
           </div>
         </form>
+        <div class="weatherInfo">
+          <br />
+          <ul>
+            <li class="city"></li>
+            <li class="day"></li>
+            <li class="weatherDescription"></li>
+          </ul>
 
-        <br />
-        <ul>
-          <li class="city"></li>
-          <li class="day"></li>
-          <li class="weatherDescription"></li>
-        </ul>
+          <div class="row">
+            <div class="col-6">
+              <p><span class="temp"></span>ºC</p>
+            </div>
 
-        <div class="row">
-          <div class="col-6">
-            <p><span class="temp"></span>ºC</p>
-          </div>
-
-          <div class="col-6 details">
-            <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind speed: <span id="wind"></span>km/h</li>
-            </ul>
+            <div class="col-6 details">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind speed: <span id="wind"></span>km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div class="weatherForcast row">
+        <div class="weatherForecast row">
           <div class="col">
-            <div class="WeatherForcastPreview">
-              <div class="forcast-time">
-                Mon
-                <canvas width="38" height="38"></canvas>
-              </div>
-              <div class="forcast-temperature">
-                <span class="forcast-temperature-max">13°</span>
-                <span class="forcast-temperature-min">2°</span>
+            <div class="WeatherForecastPreview">
+              <div class="forecast-time">Mon</div>
+              <canvas width="38" height="38"></canvas>
+
+              <div class="forecast-temperature">
+                <span class="forecast-temperature-max">13°</span>
+                <span class="forecast-temperature-min">2°</span>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="WeatherForcastPreview">
-              <div class="forcast-time">
-                Tue
-                <canvas width="38" height="38"></canvas>
-              </div>
-              <div class="forcast-temperature">
-                <span class="forcast-temperature-max">13°</span>
-                <span class="forcast-temperature-min">2°</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="WeatherForcastPreview">
-              <div class="forcast-time">
-                Wed
-                <canvas width="38" height="38"></canvas>
-              </div>
-              <div class="forcast-temperature">
-                <span class="forcast-temperature-max">13°</span>
-                <span class="forcast-temperature-min">2°</span>
+            <div class="WeatherForecastPreview">
+              <div class="forecast-time">Tue</div>
+              <canvas width="38" height="38"></canvas>
+
+              <div class="forecast-temperature">
+                <span class="forecast-temperature-max">13°</span>
+                <span class="forecast-temperature-min">2°</span>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="WeatherForcastPreview">
-              <div class="forcast-time">
-                Thu
-                <canvas width="38" height="38"></canvas>
-              </div>
-              <div class="forcast-temperature">
-                <span class="forcast-temperature-max">13°</span>
-                <span class="forcast-temperature-min">2°</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="WeatherForcastPreview">
-              <div class="forcast-time">
-                Fri
-                <canvas width="38" height="38"></canvas>
-              </div>
-              <div class="forcast-temperature">
-                <span class="forcast-temperature-max">13°</span>
-                <span class="forcast-temperature-min">2°</span>
+            <div class="WeatherForecastPreview">
+              <div class="forecast-time">Wed</div>
+              <canvas width="38" height="38"></canvas>
+
+              <div class="forecast-temperature">
+                <span class="forecast-temperature-max">13°</span>
+                <span class="forecast-temperature-min">2°</span>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="WeatherForcastPreview">
-              <div class="forcast-time">
-                Sat
-                <canvas width="38" height="38"></canvas>
+            <div class="WeatherForecastPreview">
+              <div class="forecast-time">Thu</div>
+              <canvas width="38" height="38"></canvas>
+
+              <div class="forecast-temperature">
+                <span class="forecast-temperature-max">13°</span>
+                <span class="forecast-temperature-min">2°</span>
               </div>
-              <div class="forcast-temperature">
-                <span class="forcast-temperature-max">13°</span>
-                <span class="forcast-temperature-min">2°</span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="WeatherForecastPreview">
+              <div class="forecast-time">Fri</div>
+              <canvas width="38" height="38"></canvas>
+
+              <div class="forecast-temperature">
+                <span class="forecast-temperature-max">13°</span>
+                <span class="forecast-temperature-min">2°</span>
               </div>
             </div>
           </div>
         </div>
+        <p>
+          <a href="https://github.com/kelseyrau/sheCodes" target="_blank"
+            >Open-source code</a
+          >, by Kelsey Rau
+        </p>
       </div>
-      <p>
-        <a href="https://github.com/kelseyrau/sheCodes" target="_blank"
-          >Open-source code</a
-        >, by Kelsey Rau
-      </p>
     </div>
   </body>
   <script

@@ -45,3 +45,30 @@ ul {
 p {
   font-size: 12px;
 }
+.weatherForecast {
+  border-bottom: 1px solid #f9f7fe;
+  margin: 40px 0;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.forecast-time {
+  font-weight: bold;
+  text-align: center;
+}
+.forecast-temperature {
+  text-align: center;
+}
+.forecast-temperature-min {
+  color: #24527a;
+  font-weight: bold;
+}
+.forecast-temperature-max {
+  color: #f95959;
+  font-weight: bold;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
