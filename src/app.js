@@ -64,3 +64,20 @@ let now = new Date();
 document.querySelector(".day").innerHTML = formatDate(now);
 
 searchCity("Melbourne");
+
+// weather forecast details
+
+function displayForcast(response) {
+  console.log(response.data.list[0].main.temp_min);
+  console.log(response.data.list);
+  let temperatureLow = document.querySelector("#monMin");
+  temperatureLow.innerHTML = Math.round(response.data.list[3].main.temp_min);
+  let temperatureHigh = document.querySelector("#monMax");
+  temperatureHigh.innerHTML = Math.round(response.data.list[3].main.temp_max);
+}
+let apiKey = "422a3298b29e07a997d951a05930e2a3";
+let lat = "-38.150002";
+let lon = "144.3598";
+let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+https: console.log(apiUrl);
+axios.get(apiUrl).then(displayForcast);

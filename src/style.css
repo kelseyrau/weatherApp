@@ -70,7 +70,6 @@ li {
   text-align: center;
 }
 .forecast-time {
-  font-weight: bold;
   text-align: center;
 }
 .forecast-temperature {
@@ -78,10 +77,10 @@ li {
 }
 .forecast-temperature-min {
   color: #24527a;
-  font-weight: bold;
+  font-weight: 400;
 }
 .forecast-temperature-max {
-  color: #f95959;
+  color: #24527a;
   font-weight: bold;
 }
 .row {
