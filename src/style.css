@@ -1,0 +1,47 @@
+.container {
+  padding-top: 40px;
+  max-width: 600px;
+  height: 400px;
+}
+.weatherApp {
+  padding: 20px;
+  background-color: rgb(244, 244, 244);
+  border: 1px solid #dadde1;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#searchBar {
+  margin-left: 10px;
+  width: 260px;
+  height: 35px;
+}
+.weatherDescription {
+  text-transform: capitalize;
+}
+.searchButton,
+.currentLocationButton {
+  max-width: 100px;
+  margin-left: 15px;
+  height: 35px;
+}
+
+.city {
+  font-size: 30px;
+}
+.temp {
+  font-size: 55px;
+  padding-left: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 10px;
+}
+.humidity .wind {
+  margin: 0px;
+}
+.details {
+  padding-top: 10px;
+}
+p {
+  font-size: 12px;
+}
