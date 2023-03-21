@@ -21,6 +21,8 @@ function search(event) {
 function searchCity(city) {
   let apiKey = "422a3298b29e07a997d951a05930e2a3";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
+
   axios.get(apiUrl).then(displayWeather);
 }
 
@@ -45,8 +47,13 @@ currentLocationButton.addEventListener("click", showCurrentLocation);
 
 function formatDate(date) {
   let hours = now.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
   let minutes = now.getMinutes();
-
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   let days = [
     "Sunday",
     "Monday",
@@ -68,16 +75,20 @@ searchCity("Melbourne");
 // weather forecast details
 
 function displayForcast(response) {
-  console.log(response.data.list[0].main.temp_min);
-  console.log(response.data.list);
+  console.log(response.data.daily[0].temperature.minimum);
+  console.log(response.data.daily[0].temperature.maximum);
   let temperatureLow = document.querySelector("#monMin");
-  temperatureLow.innerHTML = Math.round(response.data.list[3].main.temp_min);
+  temperatureLow.innerHTML = Math.round(
+    response.data.daily[0].temperature.minimum
+  );
   let temperatureHigh = document.querySelector("#monMax");
-  temperatureHigh.innerHTML = Math.round(response.data.list[3].main.temp_max);
+  temperatureHigh.innerHTML = Math.round(
+    response.data.daily[0].temperature.maximum
+  );
 }
-let apiKey = "422a3298b29e07a997d951a05930e2a3";
+let apiKey = "9d13ecb1bc86a7at770cb57453d9oeff";
 let lat = "-38.150002";
 let lon = "144.3598";
-let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${lon}&lat=${lat}&key=${apiKey}`;
 https: console.log(apiUrl);
 axios.get(apiUrl).then(displayForcast);
