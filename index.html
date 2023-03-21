@@ -15,25 +15,27 @@
   <body>
     <div class="container">
       <div class="weatherApp">
-        <form class="searchForm">
+        <form id="search-form">
           <div class="row">
-            <div class="form-group col-6 searchBar">
+            <div class="form-group col-9 searchBar">
               <input
-                type="text"
+                type="search"
                 placeholder="Enter a City..."
                 class="form-control"
-                id="searchBar"
+                id="cityInput"
                 aria-describedby="searchBarHelp" />
             </div>
-            <button type="submit" class="btn btn-primary col-3 searchButton">
-              Search
-            </button>
-
-            <button
+            <div class="col-3">
+              <button type="submit" class="btn btn-secondary w-100">
+                Search
+              </button>
+            </div>
+            <!-- The text here is a commented and it is hidden on the web page 
+            <button></button>
               type="button"
               class="btn btn-secondary col-3 currentLocationButton">
               Location
-            </button>
+          </button> -->
           </div>
         </form>
         <div class="weatherInfo">

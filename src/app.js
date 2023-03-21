@@ -40,9 +40,19 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.condition.description);
 }
 
-let apiKey = "9d13ecb1bc86a7at770cb57453d9oeff";
-let query = "Geelong";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${apiKey}`;
-console.log(apiUrl);
+function search(city) {
+  let apiKey = "9d13ecb1bc86a7at770cb57453d9oeff";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 
-axios.get(apiUrl).then(displayTemperature);
+  axios.get(apiUrl).then(displayTemperature);
+}
+search("Geelong");
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#cityInput");
+  search(cityInputElement.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);

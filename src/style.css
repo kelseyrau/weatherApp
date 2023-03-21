@@ -21,18 +21,14 @@ li {
   margin: 0 auto;
   border-radius: 8px;
 }
-#searchBar {
-  margin-left: 10px;
-  width: 260px;
-  height: 35px;
-}
+
 #weatherDescription {
   text-transform: capitalize;
 }
 
 .searchButton,
 .currentLocationButton {
-  max-width: 100px;
+  max-width: 0px;
   margin-left: 15px;
   height: 35px;
 }
