@@ -26,9 +26,10 @@ li {
   width: 260px;
   height: 35px;
 }
-.weatherDescription {
+#weatherDescription {
   text-transform: capitalize;
 }
+
 .searchButton,
 .currentLocationButton {
   max-width: 100px;
@@ -36,7 +37,7 @@ li {
   height: 35px;
 }
 
-.city {
+#city {
   font-size: 30px;
 }
 .weather-temperature .units {
