@@ -86,3 +86,11 @@ li {
   display: flex;
   flex-wrap: wrap;
 }
+.weather-temperature .active {
+  color: rgb(36, 36, 36);
+  cursor: default;
+  text-decoration: none;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
