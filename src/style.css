@@ -5,7 +5,7 @@ ul {
 }
 li {
   margin-bottom: 0;
-  color:#5c636a;
+  color: #5c636a;
   line-height: 1.5;
 }
 h1 {
@@ -40,7 +40,7 @@ h1 {
 
 #city {
   font-size: 30px;
-  color: ;#202124
+  color: #202124;
 }
 .weather-temperature .units {
   position: relative;
@@ -67,25 +67,30 @@ h1 {
   padding-left: 10px;
 }
 
-.weatherForecast {
-  border-bottom: 1px solid #f9f7fe;
-  margin: 40px 0;
+.weather-forecast {
+  text-align: center;
+  margin: 30px 0;
   padding-bottom: 50px;
-  text-align: center;
+  font-size: 16px;
 }
-.forecast-time {
+.forecast-date {
   text-align: center;
+  font-size: 16px;
+  color: #5c636a;
 }
 .forecast-temperature {
   text-align: center;
 }
-.forecast-temperature-min {
+.forecast-temp-min {
   color: #24527a;
   font-weight: 400;
+  font-size: 14px;
+  opacity: 0.8;
 }
-.forecast-temperature-max {
+.forecast-temp-max {
   color: #24527a;
   font-weight: bold;
+  font-size: 14px;
 }
 .row {
   --bs-gutter-x: 1.5rem;
