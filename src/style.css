@@ -1,12 +1,12 @@
 ul {
   list-style-type: none;
-
+  margin-left: 0;
+  padding: 0;
 }
 li {
   margin-bottom: 0;
   color:#5c636a;
   line-height: 1.5;
-  l
 }
 h1 {
   padding-top: 30px;
@@ -63,7 +63,8 @@ h1 {
   margin: 0px;
 }
 .details {
-  padding-top: 4px;
+  padding-top: 14px;
+  padding-left: 10px;
 }
 
 .weatherForecast {
