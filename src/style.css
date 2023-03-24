@@ -82,13 +82,13 @@ h1 {
   text-align: center;
 }
 .forecast-temp-min {
-  color: #24527a;
+  color: #5c636a;
   font-weight: 400;
   font-size: 14px;
   opacity: 0.8;
 }
 .forecast-temp-max {
-  color: #24527a;
+  color: #5c636a;
   font-weight: bold;
   font-size: 14px;
 }
@@ -107,11 +107,12 @@ h1 {
   text-decoration: none;
 }
 a:link {
-  color: #5b5490;
+  color: #5c636a;
+  opacity: 0.8;
   text-decoration: none;
 }
 a:visited {
-  color: #5b5490;
+  color: #5c636a;
   text-decoration: none;
 }
 .date {
